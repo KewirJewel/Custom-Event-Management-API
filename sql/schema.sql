@@ -1,0 +1,12 @@
+CREATE DATABASE custom_event_api
+
+CREATE TABLE `custom_event_api`.`events` (
+  `id` INT(30) NOT NULL ,
+  `title` VARCHAR(50) NOT NULL , 
+  `description` TEXT NULL DEFAULT NULL ,
+  `date` DATE NOT NULL ,
+  `location` VARCHAR(250) NULL DEFAULT NULL ,
+  `created_at` TIMESTAMP(50) on update CURRENT_TIMESTAMP(50) NOT NULL DEFAULT CURRENT_TIMESTAMP(50) , 
+  `updated_at` TIMESTAMP(50) on update CURRENT_TIMESTAMP(50) NOT NULL DEFAULT CURRENT_TIMESTAMP(50) 
+);
+  
