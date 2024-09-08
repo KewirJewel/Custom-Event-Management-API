@@ -90,7 +90,7 @@ class event{
   function delete(){
         
             // delete query
-            $query = "DELETE FROM " . $this->events . " WHERE id = ?";
+            $query = "DELETE FROM " . $this-> events . " WHERE id = ?";
         
             // prepare query
             $stmt = $this->conn->prepare($query);

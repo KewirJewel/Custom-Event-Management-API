@@ -44,8 +44,7 @@ if($num>0){
     // set response code - 200 OK
     http_response_code(200);
   
-    // show products data in json format
-    echo json_encode($products_arr);
+    // show events data in json format
+    echo json_encode($event_arr);
 }
   
-// no products found will be here
